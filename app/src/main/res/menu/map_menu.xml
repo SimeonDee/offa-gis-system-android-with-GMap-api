@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itmZoomOut"
+        android:title="Zoom Out"
+        android:onClick="onItemClickHandler"
+        android:icon="@drawable/ic_zoom_out_big"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itmZoomIn"
+        android:title="Zoom In"
+        android:onClick="onItemClickHandler"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_zoom_in_big"/>
+
+
+
+    <item
+        android:id="@+id/itmChangeMapType"
+        android:title="Change Map Type"
+        android:onClick="onItemClickHandler" />
+</menu>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.simeon_dee.offagisapp.SplashScreenActivity">
+
+    <TextView
+        android:id="@+id/tvPojectTopic"
+        android:text="@string/project_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="28sp"
+        android:textColor="#fbffff"
+        android:shadowColor="@android:color/white"
+        android:shadowRadius="15"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="By"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#fbffff"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="10"
+        android:textStyle="bold"
+        android:layout_above="@+id/tvName1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:text="Kolawole Eunice Temitope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName1"
+        android:textSize="25sp"
+        android:textColor="#fbffff"
+        android:shadowColor="@android:color/white"
+        android:shadowRadius="10"
+        android:textStyle="bold"
+        android:layout_above="@+id/tvName2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:text="CS/HND/F15/1821"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMatric1"
+        android:textSize="22sp"
+        android:textColor="#fbffff"
+        android:shadowColor="@android:color/white"
+        android:shadowRadius="10"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/tvMatric2" />
+
+    <TextView
+        android:text="Adeniyi Seunayo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/tvName2"
+        android:textSize="25sp"
+        android:textColor="#fbffff"
+        android:shadowColor="@android:color/white"
+        android:shadowRadius="10"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvMatric1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="CS/HND/F15/1735"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMatric2"
+        android:textSize="22sp"
+        android:textColor="#fbffff"
+        android:shadowColor="@android:color/white"
+        android:shadowRadius="10"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvName2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="call on 08064555381"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView"
+        android:textSize="13sp"
+        android:textColor="#fbffff"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="10"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="5dp"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_next_acitivity_arrow"
+        android:background="@android:color/black"
+        android:id="@+id/bViewMapActivity"
+        android:onClick="onViewMapActivityClickHandler"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/tvName1" />
+
+</RelativeLayout>

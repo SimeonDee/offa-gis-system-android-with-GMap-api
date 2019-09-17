@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Offa GIS App</string>
+    <string name="title_activity_main_maps">Offa GIS App</string>
+    <string-array name="place_types">
+        <item>ATM</item>
+        <item>Bank</item>
+        <item>Hospital</item>
+        <item>Restaurant</item>
+        <item>School</item>
+    </string-array>
+
+    <string name="google_place_picker_key">  AIzaSyD7c6DO-8IJ4tY9hceY3U6TGrzNSj2zKMk </string>
+    <string name="project_title">Mobile Geographical Information System (GIS) for Android OS (Case Study: Offa)</string>
+</resources>

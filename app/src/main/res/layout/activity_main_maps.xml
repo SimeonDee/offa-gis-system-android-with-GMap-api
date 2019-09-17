@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="4dp"
+            android:paddingLeft="5dp"
+            android:background="@color/colorPrimary">
+
+            <ImageButton
+                android:id="@+id/bChangeViewType"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_change_map_type"
+                android:layout_marginLeft="10dp"
+                android:onClick="onButtonClickHandler"
+                android:layout_marginRight="5dp"/>
+
+            <ImageButton
+                android:id="@+id/bZoomIn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_zoom_in_big"
+                android:onClick="onButtonClickHandler"
+                android:layout_marginRight="5dp"/>
+
+            <ImageButton
+                android:id="@+id/bZoomOut"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_zoom_out_big"
+                android:onClick="onButtonClickHandler"
+                android:layout_marginRight="5dp"/>
+
+
+            <ImageButton
+                android:id="@+id/bDirection"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_direction2"
+                android:onClick="onButtonClickHandler"
+                android:layout_marginRight="5dp"/>
+
+            <ImageButton
+                android:id="@+id/bDuration"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_duration"
+                android:onClick="onButtonClickHandler"
+                android:layout_marginRight="5dp"/>
+
+            <ImageButton
+                android:id="@+id/bDistance"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_distance2"
+                android:onClick="onButtonClickHandler"
+                android:layout_marginRight="5dp"/>
+
+            <ImageButton
+                android:id="@+id/bPlaceType"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_search_place_type"
+                android:onClick="onButtonClickHandler"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            tools:weightSum="5">
+
+            <EditText
+                android:id="@+id/etLocation"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+
+            <Button
+                android:id="@+id/bSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onLocate"
+                android:text="Locate"
+                android:padding="2dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/bPlaceDetails"
+                android:text="Place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:onClick="onPlaceDetailsButtonClick"
+                android:layout_weight="1"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.simeon_dee.offagisapp.MainMapsActivity"
+            android:layout_weight="0.66" />
+
+
+</LinearLayout>
